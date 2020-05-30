@@ -2,7 +2,13 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zzh8829/yolov3-tf2/blob/master/colab_gpu.ipynb)
 
-This repo provides a clean implementation of YoloV3 in TensorFlow 2.0 using all the best practices.
+This repo provides a clean implementation of Social Distance Tracker using YoloV3 in TensorFlow 2.0 using all the best practices.
+
+This repo has been modified , and is hard-coded for a specific video.
+
+The file ./data/utils.py has been modified in such a way that it serves its original purpose along with tracking the social distancing.
+
+The original code for YoloV3 has been cloned from https://github.com/zzh8829/yolov3-tf2.
 
 ## Key Features
 
