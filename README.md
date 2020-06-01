@@ -6,7 +6,9 @@ This repo provides a clean implementation of Social Distance Tracker using YoloV
 
 This repo has been modified , and is hard-coded for a specific video.
 
-The file ./data/utils.py has been modified in such a way that it serves its original purpose along with tracking the social distancing.
+To use this repo for another video or image one'd have to change the perspective params according to the image or video used in ./data/utils.py . 
+
+The file ./data/utils.py has been modified in such a way that it serves its original purpose of yolov3 object detection along with tracking the social distancing.
 
 The original code for YoloV3 has been cloned from https://github.com/zzh8829/yolov3-tf2.
 
@@ -56,8 +58,16 @@ python convert.py --weights ./data/yolov3-tiny.weights --output ./checkpoints/yo
 ```
 
 ### Detection
+```bash
+#   to detect the video for which the code is hard-coded.
+python detect.py --video ./input/Pedestrian overpass - original video (sample) - BriefCam Syndex.mp4
+
+```
+
+
 
 ```bash
+
 #  image with yolov3
 python detect.py --image ./data/meme.jpg
 
