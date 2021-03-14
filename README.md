@@ -60,7 +60,7 @@ python convert.py --weights ./data/yolov3-tiny.weights --output ./checkpoints/yo
 ### Detection
 ```bash
 #   to detect the video for which the code is hard-coded.
-python detect.py --video ./input/Pedestrian overpass - original video (sample) - BriefCam Syndex.mp4
+python detect_video.py --video ./input/Pedestrian overpass - original video (sample) - BriefCam Syndex.mp4
 
 ```
 
