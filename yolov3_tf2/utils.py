@@ -128,6 +128,7 @@ def draw_outputs(img, outputs, class_names):
 
     for s,i in enumerate(pos_dict.values()):
     	for t,j in enumerate(pos_dict.values()):
+            
     		if s<t:
     			x1y1=(mat@np.array([i[0],i[1],1]))/(mat@np.array([i[0],i[1],1]))[2]
     			i=np.round(x1y1[:2])
@@ -140,7 +141,7 @@ def draw_outputs(img, outputs, class_names):
     			if dist<100:
     				white=cv2.line(white,(int(i[0]),int(i[1])),(int(j[0]),int(j[1])),(255,0,0),3)
 
-    return img
+    return img,white
 
 
 def draw_labels(x, y, class_names):
